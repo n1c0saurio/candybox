@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas frecuentes &bullet; Somos Candybox</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- local css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- cabecera -->
+      <header class="row">
+        <div id="brand" class="align-self-center col-6 col-md-8 col-lg-4">
+          <img
+            id="brand-iso"
+            class="d-sm-none"
+            src="img/iso.png"
+            alt="Somos Candybox"
+          />
+          <img
+            id="brand-logo"
+            class="d-none d-sm-inline"
+            src="img/isologo.png"
+            alt="Somos Candybox"
+          />
+        </div>
+
+        <nav id="main-menu" class="align-self-center col-6 col-md-4 col-lg-8">
+          <button id="btn-main-menu-open" class="btn btn-primary d-lg-none">
+            <span class="fa fa-bars"></span>
+          </button>
+          <ul id="main-menu-list">
+            <li id="btn-main-menu-close" class="d-lg-none">
+              <button class="btn">
+                <span class="fa fa-close"></span>
+              </button>
+            </li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="faq.html">F.A.Q.</a></li>
+            <li><a href="comprar.html">C&oacute;mpranos</a></li>
+            <li id="main-menu-item-contact">
+              <a class="scroll" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- contenido -->
+      <article id="faq" class="row">
+        <div class="row col-12">
+          <picture class="col-md-3 align-self-center page-icon">
+            <img src="img/icono_faq.gif" alt="Preguntas frecuentes" />
+          </picture>
+          <div class="col-md-9 align-self-center">
+            <h1 class="page-title">Preguntas frecuentes</h1>
+          </div>
+        </div>
+
+        <div
+          id="faq-preguntas-respuestas"
+          role="tablist"
+          class="col-md-9 mx-auto"
+        >
+          <div class="card">
+            <div class="card-header" role="tab" id="pregunta-ubicacion">
+              <h5 class="mb-0">
+                <a
+                  data-toggle="collapse"
+                  href="#respuesta-ubicacion"
+                  aria-expanded="true"
+                  aria-controls="respuesta-ubicacion"
+                >
+                  ¿D&oacute;nde los puedo ubicar?
+                </a>
+              </h5>
+            </div>
+
+            <div
+              id="respuesta-ubicacion"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="pregunta-ubicacion"
+            >
+              <div class="card-body">
+                Somos una tienda online, nuestros canales de comunicaci&oacute;n
+                y ventas son
+                <a href="https://www.instagram.com/candyboxcl/">Instagram</a>,
+                <a href="https://www.facebook.com/candyboxcl/">Facebook</a>
+                y nuestro
+                <a href="mailto:hola@somoscandybox.cl"
+                  >correo electr&oacute;nico</a
+                >. Por lo mismo nuestros productos los entregamos por medio de
+                env&iacute;o.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="pregunta-envios">
+              <h5 class="mb-0">
+                <a
+                  class="collapsed"
+                  data-toggle="collapse"
+                  href="#respuesta-envios"
+                  aria-expanded="false"
+                  aria-controls="respuesta-envios"
+                >
+                  ¿C&oacute;mo hacen los env&iacute;os?
+                </a>
+              </h5>
+            </div>
+            <div
+              id="respuesta-envios"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="pregunta-envios"
+            >
+              <div class="card-body">
+                Realizamos env&iacute;os a todo Chile. Dentro de Santiago
+                trabajamos con Pro Despacho, un servicio de env&iacute;os
+                independiente, y en regiones trabajamos con Starken o
+                Chilexpress, en modalidad por pagar.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="pregunta-medios-pago">
+              <h5 class="mb-0">
+                <a
+                  class="collapsed"
+                  data-toggle="collapse"
+                  href="#respuesta-medios-pago"
+                  aria-expanded="false"
+                  aria-controls="respuesta-medios-pago"
+                >
+                  ¿C&oacute;mo se paga?
+                </a>
+              </h5>
+            </div>
+            <div
+              id="respuesta-medios-pago"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="pregunta-medios-pago"
+            >
+              <div class="card-body">
+                Recibimos pagos por MACH, dep&oacute;sito a Cuenta Rut o
+                transferencia electr&oacute;nica.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="pregunta-fecha-envios">
+              <h5 class="mb-0">
+                <a
+                  class="collapsed"
+                  data-toggle="collapse"
+                  href="#respuesta-fecha-envios"
+                  aria-expanded="false"
+                  aria-controls="respuesta-fecha-envios"
+                >
+                  ¿Qu&eacute; d&iacute;as hacen los env&iacute;os?
+                </a>
+              </h5>
+            </div>
+            <div
+              id="respuesta-fecha-envios"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="pregunta-fecha-envios"
+            >
+              <div class="card-body">
+                Enviamos los martes y s&aacute;bados, los n&uacute;meros de
+                seguimiento los entregamos el mismo d&iacute;a del env&iacute;o
+                despu&eacute;s de las 21 hrs.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="pregunta-fecha-entrega">
+              <h5 class="mb-0">
+                <a
+                  class="collapsed"
+                  data-toggle="collapse"
+                  href="#respuesta-fecha-entrega"
+                  aria-expanded="false"
+                  aria-controls="respuesta-fecha-entrega"
+                >
+                  ¿Cu&aacute;ndo llega mi cajita?
+                </a>
+              </h5>
+            </div>
+            <div
+              id="respuesta-fecha-entrega"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="pregunta-fecha-entrega"
+            >
+              <div class="card-body">
+                En Santiago, los env&iacute;os llegan el mismo d&iacute;a, en
+                regiones el tiempo var&iacute;a dependiendo del servicio de
+                despacho que se elija.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- pie de pagina -->
+      <footer class="row">
+        <div id="contact" class="align-self-end col-sm-12 col-md-6 col-lg-8">
+          <h5>¡S&iacute;guenos y ponte en contacto!</h5>
+          <p>
+            <a id="rrss-icon-face" href="https://facebook.com/candyboxcl">
+              <span class="fa fa-facebook-official fa-align-center"></span>
+            </a>
+            <a id="rrss-icon-insta" href="https://www.instagram.com/candyboxcl">
+              <span class="fa fa-instagram fa-align-center"></span>
+            </a>
+            <span id="rrss-label" class="d-none d-lg-inline">@candyboxcl</span>
+            <a href="mailto:hola@somoscandybox.cl">
+              <span
+                id="email-icon"
+                class="fa fa-envelope fa-align-center"
+              ></span>
+              <span id="email-label" class="d-none d-md-inline"
+                >hola@somoscandybox.cl</span
+              >
+            </a>
+          </p>
+        </div>
+        <div class="align-self-end col-sm-12 col-md-6 col-lg-4">
+          <p id="rights">&copy; 2020, todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- bootstrap extra -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- local javascript -->
+    <script src="js/actions.js"></script>
+  </body>
+</html>

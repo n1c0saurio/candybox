@@ -1,0 +1,384 @@
+/*
+ * PALETA
+ *
+ * Primario     #ed81a9   237 129 169
+ * Secundario   #6bcdb3   107 205 179
+ *
+ * Rojo         #d1756e   209 117 110
+ * Café         #9f7567   159 117 103
+ * Naranja      #f8a277   248 162 119
+ * Amarillo     #f7d076   247 208 118
+ * Verde        #8dbc6b   141 188 107
+ * Azul         #6ca6ff   108 166 255
+ * Morado       #a48bb2   164 139 178
+ *
+ * Blanco       #fffff0   255 255 240
+ * Gris claro   #c2bfb8   194 191 184
+ * Gris         #9d968d   157 150 141
+ * Gris oscuro  #80736d   128 115 109
+ */
+
+/*
+ * apariencia
+ */
+
+body {
+  font-family: "Asap", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #80736d;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  text-shadow: 2px 2px 0 #c2bfb8;
+  margin-bottom: 24px;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+a {
+  color: #ed81a9;
+}
+
+a:hover,
+a:active,
+a .fa:hover,
+a .fa:active {
+  color: #6bcdb3;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #ed81a9;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #6bcdb3;
+}
+
+.container {
+  background: url(../img/fondos/mosaico_blanco.gif) repeat center;
+}
+
+header {
+  background: url(../img/fondos/toldo_rosa.svg) repeat-x bottom center;
+  padding: 24px 24px 36px;
+  margin-bottom: 24px;
+}
+
+#main-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#brand-iso,
+#brand-logo {
+  height: 42px;
+  width: auto;
+}
+
+header,
+footer,
+#btn-main-menu-close button {
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+#main-menu-list {
+  padding: 0;
+  margin: 0;
+}
+
+#main-menu-list li {
+  display: inline-block;
+  padding: 8px;
+}
+
+#main-menu-list a,
+#btn-main-menu-close button {
+  font-weight: 600;
+  color: white;
+}
+
+#btn-main-menu-close .fa {
+  font-size: 28px;
+}
+
+#main-menu-list a:hover,
+#main-menu-list a:active {
+  color: #6bcdb3;
+}
+
+article {
+  margin-bottom: 24px;
+}
+
+footer {
+  background-color: #80736d;
+  align-items: flex-end;
+  padding: 24px;
+  margin-top: 48px;
+  box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer p,
+footer h5,
+footer a {
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+#rrss-icon-face,
+#rrss-icon-insta,
+#email-icon {
+  padding-right: 8px;
+}
+
+#rrss-label {
+  padding-right: 24px;
+}
+
+/* especificos */
+
+label.error {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d1756e;
+  padding: 8px;
+}
+
+label.error::before {
+  font-family: "FontAwesome";
+  content: "\f069";
+  padding-right: 8px;
+}
+
+.page-icon {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.page-icon img {
+  width: 72px;
+  border-radius: 50%;
+  border: 4px solid #80736d;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+  border-radius: 24px;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item {
+  background-color: #ed81a9;
+}
+
+.carousel-item img {
+  opacity: 0.5;
+}
+
+#index-carrusel h3,
+#index-carrusel a {
+  color: white;
+  text-shadow: 2px 2px 0 #80736d;
+}
+
+#index-carrusel a:hover,
+#index-carrusel a:active {
+  color: #6bcdb3;
+}
+
+#faq-preguntas-respuestas {
+  margin-top: 24px;
+}
+
+.card {
+  background-color: white;
+  border: none;
+  border-radius: unset;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:first-child {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.card:last-child {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.card-header {
+  background-color: unset;
+}
+
+.card-body {
+  color: #80736d;
+  border-bottom: 1px solid #c2bfb8;
+}
+
+.form-control {
+  box-shadow: inset 2px 2px 0 rgba(194, 191, 184, 0.5);
+}
+
+.form-control:focus,
+.custom-select:focus {
+  border-width: 2px;
+  border-color: #6bcdb3;
+  box-shadow: unset;
+}
+
+.form-control::placeholder {
+  font-style: italic;
+  color: #c2bfb8;
+}
+
+.bocadillo {
+  padding: 48px 24px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 8px 8px 0 rgba(128, 115, 109, 0.5);
+  margin: 24px 0;
+}
+
+/*
+ * responsividad
+ */
+
+/* @media screen and (min-width: 0) {} */
+
+#btn-main-menu-open {
+  color: #9d968d;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: -1px -1px 1px rgba(128, 115, 109, 0.5);
+}
+
+#btn-main-menu-open:hover,
+#btn-main-menu-open:active {
+  color: white;
+  background-color: #6bcdb3;
+  box-shadow: 1px 1px 0 rgba(128, 115, 109, 0.5);
+}
+
+#contact,
+#rights {
+  text-align: center;
+}
+
+#rrss-icon-face,
+#rrss-icon-insta,
+#email-icon {
+  font-size: 32px;
+}
+
+#rights {
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    background: url(../img/fondos/mosaico_verde.gif) repeat center;
+  }
+
+  .container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 0 rgba(128, 115, 109, 0.5), 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  header {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  footer {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    text-align: left;
+  }
+
+  #rights {
+    text-align: right;
+  }
+
+  #rrss-icon-face,
+  #rrss-icon-insta,
+  #email-icon {
+    font-size: 18px;
+  }
+
+  .page-title {
+    text-align: left;
+  }
+
+  .page-icon {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #main-menu-list {
+    position: fixed;
+    top: -180px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 24px 0 42px;
+    background: url(../img/fondos/toldo_gris.svg) repeat-x bottom center;
+    z-index: 2000;
+    transition: top 0.4s ease-in-out;
+  }
+
+  .show {
+    top: 0px !important;
+  }
+
+  #main-menu-list li {
+    font-size: 18px;
+  }
+
+  #btn-main-menu-close button:active,
+  #btn-main-menu-close button:hover {
+    color: #6bcdb3;
+  }
+}
+
+/*
+ * fixes
+ */
+
+#txt-fono-error {
+  position: absolute;
+  top: 36px;
+}

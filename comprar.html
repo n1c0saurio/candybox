@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprar &bullet; Somos Candybox</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- local css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- cabecera -->
+      <header class="row">
+        <div id="brand" class="align-self-center col-6 col-md-8 col-lg-4">
+          <img
+            id="brand-iso"
+            class="d-sm-none"
+            src="img/iso.png"
+            alt="Somos Candybox"
+          />
+          <img
+            id="brand-logo"
+            class="d-none d-sm-inline"
+            src="img/isologo.png"
+            alt="Somos Candybox"
+          />
+        </div>
+
+        <nav id="main-menu" class="align-self-center col-6 col-md-4 col-lg-8">
+          <button id="btn-main-menu-open" class="btn btn-primary d-lg-none">
+            <span class="fa fa-bars"></span>
+          </button>
+          <ul id="main-menu-list">
+            <li id="btn-main-menu-close" class="d-lg-none">
+              <button class="btn">
+                <span class="fa fa-close"></span>
+              </button>
+            </li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="faq.html">F.A.Q.</a></li>
+            <li><a href="comprar.html">C&oacute;mpranos</a></li>
+            <li id="main-menu-item-contact">
+              <a class="scroll" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- contenido -->
+      <article id="pg-comprar" class="row">
+        <div class="col-12 row">
+          <picture class="col-md-3 align-self-center page-icon">
+            <img src="img/icono_clientes.gif" alt="Preguntas frecuentes" />
+          </picture>
+          <div class="col-md-9 align-self-center">
+            <h1 class="page-title">¡P&iacute;denos una!</h1>
+          </div>
+        </div>
+
+        <div class="col-md-10 mx-auto">
+          <form id="formulario-compra" class="bocadillo" action="#" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="txt-nombre">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="txt-nombre"
+                    name="txt-nombre"
+                    placeholder="Pepe"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="txt-apellido">Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="txt-apellido"
+                    name="txt-apellido"
+                    placeholder="Lota"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="txt-run">RUN</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="txt-run"
+                    name="txt-run"
+                    placeholder="123456789"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="txt-email">Correo</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="txt-email"
+                    name="txt-email"
+                    placeholder="pepelota@aplaplac.cl"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="txt-fono">Tel&eacute;fono</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">+56</div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="txt-fono"
+                      name="txt-fono"
+                      placeholder="987654321"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="txt-direccion">Direcci&oacute;n</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="txt-direccion"
+                    name="txt-direccion"
+                    placeholder="Titirilcahue 1313"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="regiones">Regi&oacute;n</label>
+                  <select
+                    class="custom-select"
+                    id="regiones"
+                    name="cmb-region"
+                  ></select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="comunas">Comuna</label>
+                  <select
+                    class="custom-select"
+                    id="comunas"
+                    name="cmb-comuna"
+                  ></select>
+                </div>
+              </div>
+              <div class="col-md-6 offset-md-6">
+                <button type="submit" class="btn btn-primary btn-block">
+                  ¡Enviar!
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </article>
+
+      <!-- pie de pagina -->
+      <footer class="row">
+        <div id="contact" class="align-self-end col-sm-12 col-md-6 col-lg-8">
+          <h5>¡S&iacute;guenos y ponte en contacto!</h5>
+          <p>
+            <a id="rrss-icon-face" href="https://facebook.com/candyboxcl">
+              <span class="fa fa-facebook-official fa-align-center"></span>
+            </a>
+            <a id="rrss-icon-insta" href="https://www.instagram.com/candyboxcl">
+              <span class="fa fa-instagram fa-align-center"></span>
+            </a>
+            <span id="rrss-label" class="d-none d-lg-inline">@candyboxcl</span>
+            <a href="mailto:hola@somoscandybox.cl">
+              <span
+                id="email-icon"
+                class="fa fa-envelope fa-align-center"
+              ></span>
+              <span id="email-label" class="d-none d-md-inline"
+                >hola@somoscandybox.cl</span
+              >
+            </a>
+          </p>
+        </div>
+        <div class="align-self-end col-sm-12 col-md-6 col-lg-4">
+          <p id="rights">&copy; 2020, todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- bootstrap extra -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- local javascript -->
+    <script src="js/actions.js"></script>
+  </body>
+</html>
